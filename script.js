@@ -7,15 +7,3 @@ document.querySelectorAll('nav a').forEach(anchor => {
         });
     });
 });
-
-// Dark mode toggle
-const toggleDarkMode = document.createElement('button');
-toggleDarkMode.innerText = "Toggle Dark Mode";
-toggleDarkMode.style.position = "fixed";
-toggleDarkMode.style.bottom = "10px";
-toggleDarkMode.style.right = "10px";
-document.body.appendChild(toggleDarkMode);
-
-toggleDarkMode.addEventListener('click', () => {
-    document.body.classList.toggle('dark-mode');
-});
